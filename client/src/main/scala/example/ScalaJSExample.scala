@@ -24,17 +24,7 @@ object ScalaJSExample extends js.JSApp {
   def main(): Unit = {
     dom.document.getElementById("scalajsShoutOut").textContent = SharedMessages.itWorks
 
-    ////
-
-    //    ReactDOM.render(router(), dom.document.getElementById("root"))
-    //    ReactDOM.render(dom.document.getElementById("root"))
-
-
-    // Usage:
-
-
     val hi = Hello("Draconus")
-
     hi.renderIntoDOM(dom.document.getElementById("root"))
   }
 }
